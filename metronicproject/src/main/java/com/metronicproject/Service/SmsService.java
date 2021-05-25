@@ -22,11 +22,11 @@ public class SmsService {
 	         * */
 
 	        // kullanıcı adı
-	        String username = "5074000101";
+	     
 	        // kullanıcı şifresi
-	        String password = "337922";
+	        
 	        // mesaj başlığı
-	        String header = "4326060860";
+	      
 	        
 	        Random r = new Random();
 	        int Low = 100000;
@@ -42,7 +42,6 @@ public class SmsService {
 //	        String gsm = "5435011995";
 
 	        // Get ile sorgulanacak Netgsm servisi
-	        String url = "https://api.netgsm.com.tr/sms/send/otp/?usercode="+username+"&password="+password+"&no="+phone+"&msg="+msg+"&msgheader="+header+"";
 
 	        // URL obje tanımı
 	        URL obj = new URL(url);
