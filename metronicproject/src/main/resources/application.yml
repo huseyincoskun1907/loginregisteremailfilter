@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.web: debug
+    
+    
+    spring:
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 180572973960-bqukgfhq0np0atj8asii0tf1ji9n0d8d.apps.googleusercontent.com
+          clientSecret: DKy5tQ9m1_A1ynDmwooVDzRp
+          scope:
+           - email
+           - profile
+  

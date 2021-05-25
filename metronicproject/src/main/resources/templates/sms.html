@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link th:href="@{/images/favicon-32x32.png}" href="../static/images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+    <link th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link th:href="@{/css/main.css}" href="../static/css/main.css" rel="stylesheet" media="screen" />
+
+</head>
+<body>
+<div class="container">
+
+    <div class="row" style="margin-top:20px">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+
+       
+
+            <form role="form" th:action="@{/sms}" method="post">
+            
+                <fieldset>
+
+                    <h2>Sms Doğrulama <small>For create Todos.</small></h2>
+
+                    <hr class="colorgraph">
+
+                    <div class="form-group">
+                  <label>Sms şifre:     <input type="text" name="tokensms" id="tokensms" class="form-control input-lg"></label>  
+                    </div>
+
+                   <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+                        </div>
+                       
+                    </div>
+                 
+                   
+
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
+</body>
+</html>
